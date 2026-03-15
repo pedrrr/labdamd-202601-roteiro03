@@ -11,3 +11,6 @@ Caso necessária uma adição de novos atributos de retorno para contrato de ope
 
 # Escolha de tecnologia
 Em um cenário onde uma API é exposta para terceiros, mas que o projeto propriamente dito possui microsserviços que támbém precisam se comunicar entre si, o meu uso de tecnologia seria a adesesão ao padrão REST em comunicações externas e gRPC em internas. Dessa forma, o sistema seria capaz de aproveitar da maleabilidade e simplicidade da arquitetura REST para comunicação com clientes externos e, em um ambiente controlado -no caso, a comunicação entre microserviços-, o gRPC e suas complexas exigências, mas que apresentam um trade-off enorme na relação entre custo e benefício, poderia ser implementado de forma ideal e confiável.   
+
+# Conexão com labs anteriores
+A transparência do RPC faz chamadas remotas parecerem locais, ocultando diferenças latência e falhas de rede. Nesse cenário,  desenvolvedores podem ser levados a projetar sistemas como se todas as chamadas fossem rápidas e confiáveis. Por exemplo, realizar várias chamadas RPC dentro de um loop pode gerar muitas requisições de rede. Esse tipo de decisão de design pode causar problemas de desempenho e escalabilidade.
